@@ -46,7 +46,6 @@
 		<module>spring-boot-sample-hateoas</module>
 		<module>spring-boot-sample-integration</module>
 		<module>spring-boot-sample-jersey</module>
-		<module>spring-boot-sample-jersey1</module>
 		<module>spring-boot-sample-jetty</module>
 		<module>spring-boot-sample-jetty-jsp</module>
 		<module>spring-boot-sample-jetty-ssl</module>
@@ -247,16 +246,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<profiles>
-		<profile>
-			<id>java10</id>
-			<activation>
-				<jdk>10</jdk>
-			</activation>
-			<properties>
-				<maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
-				<maven-failsafe-plugin.version>2.21.0</maven-failsafe-plugin.version>
-			</properties>
-		</profile>
-	</profiles>
 </project>
